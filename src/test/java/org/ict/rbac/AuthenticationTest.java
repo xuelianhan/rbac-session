@@ -9,6 +9,10 @@ import org.apache.shiro.subject.Subject;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * @see https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+ * @see https://stackoverflow.com/questions/348170/how-to-undo-git-add-before-commit
+ */
 public class AuthenticationTest {
 	SimpleAccountRealm simpleAccountRealm = new SimpleAccountRealm();
 
