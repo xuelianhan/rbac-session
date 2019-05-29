@@ -1,0 +1,9 @@
+#maven compile directory
+/target/
+
+#Use wildcards as well
+*~
+*.swp
+*.java.swp
+*.class
+*.un~
