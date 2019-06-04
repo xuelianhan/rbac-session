@@ -33,14 +33,15 @@ public class AuthenticationTest {
 		SecurityUtils.setSecurityManager(defaultSecurityManager); 
 		Subject subject = SecurityUtils.getSubject(); 
 		
-		UsernamePasswordToken token = new UsernamePasswordToken("test", "test123");
+		UsernamePasswordToken token = new UsernamePasswordToken("test", "test123", true);
 		subject.login(token); 
 		System.out.println("isAuthenticated:" + subject.isAuthenticated()); 
 		
 		boolean isManager = subject.hasRole("manager");
 		boolean isUser = subject.hasRole("user");
 		System.out.println("isManager:" + isManager + ", isUser:" + isUser); 
-		
+		boolean remembered = subject.isRemembered();
+		System.out.println("remembered:" + remembered); 
 		try {
 			subject.checkRoles("admin", "manager");
 			System.out.println("has roles of admin and manager"); 
