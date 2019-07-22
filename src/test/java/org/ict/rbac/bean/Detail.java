@@ -11,7 +11,6 @@ import com.google.common.base.CaseFormat;
 
 /**
  * @see https://www.geeksforgeeks.org/camel-case-given-sentence/
- * @author hanxuelian001
  *
  */
 public class Detail {
