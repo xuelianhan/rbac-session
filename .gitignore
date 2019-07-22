@@ -1,6 +1,6 @@
 #maven compile directory
 /target/
-
+.settings
 #Use wildcards as well
 *~
 *.swp

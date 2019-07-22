@@ -13,7 +13,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
+/**
+ * 
+ * @see https://howtodoinjava.com/spring-boot/spring-boot-tutorial-with-hello-world-example/
+ *
+ */
 @Configuration
 @ComponentScan(value = { "com.ict.rbac" })
 @EnableAutoConfiguration
